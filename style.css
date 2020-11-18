@@ -1,0 +1,43 @@
+/* ealmonte */
+
+body {
+  color: white;
+  line-height:1.2;
+  padding: 3px;
+}
+
+a, a:link, a:focus, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+
+div {
+  width: 100%;
+}
+  
+img.rounded-corners {
+  border-radius: 6px;
+}
+  
+.button {
+  background-color: #c8c4ed;
+  border: none;
+  color: black;
+  padding: 4px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+  
+.button:hover {
+  background-color: #6d62d0;
+}
+
+/*use for all elements */
+* {
+  box-sizing: border-box;
+}
