@@ -7,11 +7,10 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 <script type="text/javascript" src="asset-control-center-functions.js"></script>
-
 </head>
 <body bgcolor="#3e32a8">
+
 <center>
 <img src="screenly_logo90x90.png">
 <h2>Screenly OSE - Asset Control Center</h2>
@@ -20,21 +19,25 @@
 <div id="print_ip"><br></div>
 <div id="show_total_assets""><br></div>
 
-<hr style="width: 90%; border: 1px dashed white">
+<hr style="width: 90%; border: 1px dotted white">
 <div><br>
-<b>Enter IP of Screenly Device:</b><br>
 
+<b>Enter IP of Screenly Device:</b><br>
 <input type="text" id="ipfromform" size="40" autofocus><br><br>
 <button class="button" onclick="changeIpFunction()">Get Info</button>
 <button class="button" onclick="document.getElementById('ipfromform').value = ''">Clear</button>
-
 </center></div>
 
+<h3>Bulk Asset Control</h3>
 <button class="button" onclick="disableAllAssets()">Disable All Assets</button>
+<button class="button" onclick="enableAllAssets()">Enable All Assets</button>
 <p id="disabled_assets_confirm"></p>
+<p id="enabled_assets_confirm"></p>
 
 <div id="show_array_ids"><br></div>
+<hr style="width: 90%; border: 1px dotted white">
 
+<center><h3>Detailed Asset Information</h3></center>
 <div id="current_assets" style="padding-left: 10px"></div>
 
 <script>
@@ -43,5 +46,9 @@ document.getElementById("current_screenly_pi_url").innerHTML = "<b>Current Devic
 document.getElementById("print_ip").innerHTML = "<b>Current Device IP: </b>";
 </script>
 
+
+<br><br>
+<center>Beta v0.0.8</center>
+<br><br>
 </body>
 </html>

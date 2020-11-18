@@ -34,7 +34,7 @@ function changeIpFunction() {
 		}
 	document.getElementById("current_screenly_pi_url").innerHTML = "<b>Current Device URL: </b>" + url + "<br>";
 	document.getElementById("show_total_assets").innerHTML = "<b>Total Assets on Device: </b>" + total_assets_int + "<br>";
-	document.getElementById("show_array_ids").innerHTML = testArray;
+	document.getElementById("show_array_ids").innerHTML = testArray + "<br>";
 	}
 	};
 
